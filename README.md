@@ -9,6 +9,7 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **Python - Data Structures: Lists, Tuples**
 - **Python - More Data Structures: Set, Dictionary**
 - **Python - Exceptions**
+- **Python - Classes and Objects**
 
 # Author
 
