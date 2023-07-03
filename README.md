@@ -10,6 +10,8 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **Python - More Data Structures: Set, Dictionary**
 - **Python - Exceptions**
 - **Python - Classes and Objects**
+- **Python - Test-driven development**
+- **Python - More Classes and Objects**
 
 # Author
 
