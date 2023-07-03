@@ -38,7 +38,7 @@ Similarly, no spaces are printed at the end of each printed line.
 
 ::
 
-    >>> text_indentation("    Woah now.    This is messy.   ")
+    >>> text_indentation("    Yoh dawg.    This is cool.   ")
     Woah now.
     <BLANKLINE>
     This is messy.
