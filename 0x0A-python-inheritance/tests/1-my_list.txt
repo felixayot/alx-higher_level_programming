@@ -40,9 +40,9 @@ A `TypeError` will be raised for any more than one instantiation arguments.
 
 ::
 
-    >>> my_list = MyList([1, 2], [3, 4])
+    >>> my_list = MyList((3, 5), ["Jorim", "Alice"])
     Traceback (most recent call last):
-    TypeError: list() takes at most 1 argument (2 given)
+    TypeError: list expected at most 1 argument, got 2
 
 Usage
 =====
@@ -77,11 +77,11 @@ And removed with the `remove()` method.
 
 See the documentation on Python lists for more built-in methods.
 
-``print_sorted`` Method
+`print_sorted` Method
 =======================
 
-``MyList`` implements a single method - a public instance method
-``print_sorted(self)``.
+`MyList` implements a single method - a public instance method
+`print_sorted(self)`.
 
 ::
 
@@ -127,20 +127,20 @@ Note that lists of strings are sorted lexographically.
 ::
 
     >>> my_list = MyList()
-    >>> my_list.append("Brennan")
-    >>> my_list.append("Poppy")
-    >>> my_list.append("School")
-    >>> my_list.append("Holberton")
-    >>> my_list.append("Betty")
+    >>> my_list.append("TomTom")
+    >>> my_list.append("YoYo")
+    >>> my_list.append("JayJay")
+    >>> my_list.append("Cody")
+    >>> my_list.append("CeeCee")
     >>> print(my_list)
     ['TomTom', 'YoYo', 'JayJay', 'Cody', 'CeeCee']
 
 ::
 
     >>> my_list.print_sorted()
-    ['TomTom', 'YoYo', 'JayJay', 'Cody', 'CeeCee']
+    ['CeeCee', 'Cody', 'JayJay', 'TomTom', 'YoYo']
 
-Another friendly reminder that the original list is unaltered :)
+Confirm that the original list is unaltered
 
 ::
 
@@ -155,7 +155,7 @@ Nothing to sort with empty lists.
     >>> my_list.print_sorted()
     []
 
-If ``print_sorted(...)`` is called on a list of different types, a TypeError
+If `print_sorted(...)` is called on a list of different types, a TypeError
 will be raised.
 
 ::
@@ -163,4 +163,4 @@ will be raised.
     >>> my_list = MyList([1, "Parents", "Family", 5])
     >>> my_list.print_sorted()
     Traceback (most recent call last):
-    TypeError: unorderable types: str() < int()
+    TypeError: '<' not supported between instances of 'str' and 'int'

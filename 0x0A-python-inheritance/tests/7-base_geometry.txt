@@ -6,7 +6,7 @@ This modules defines a base geometry class BaseGeometry.
 Instantiation
 =============
 
-``BaseGeometry`` includes no attributes, and accordingly is initialized 
+`BaseGeometry` includes no attributes, and accordingly is initialized 
 with no arguments.
 
 ::
@@ -28,13 +28,13 @@ in a TypeError.
 
     >>> bg = BaseGeometry(None)
     Traceback (most recent call last):
-    TypeError: object() takes no parameters
+    TypeError: BaseGeometry() takes no arguments
 
 Methods
 =======
 
-``BaseGeometry`` features two methods - ``area(self)`` and 
-``integer_validator(self, name, value)``. ``area(...)`` is not yet
+`BaseGeometry` features two methods - `area(self)` and 
+`integer_validator(self, name, value)`. `area(...)` is not yet
 implemented.
 
 ::
@@ -50,9 +50,9 @@ implemented.
     Traceback (most recent call last):
     Exception: area() is not implemented
 
-The second method, ``integer_validator(...)``, validates the integer value
-of a paramter. The first parameter, ``name``, is the name of the argument to
-check. The second argument, ``value``, is the argument to check.
+The second method, `integer_validator(...)`, validates the integer value
+of a paramter. The first parameter, `name`, is the name of the argument to
+check. The second argument, `value`, is the argument to check.
 
 ::
 
@@ -60,14 +60,14 @@ check. The second argument, ``value``, is the argument to check.
     <bound method BaseGeometry.integer_validator of <7-base_geometry.BaseGeometry 
     object at...>>
 
-If ``value`` is a valid integer, the function does nothing.
+If `value` is a valid integer, the function does nothing.
 
 ::
 
 
    >>> bg.integer_validator("valid number", 1)
 
-But, if ``value`` is not an integer, a ``TypeError`` is raised.
+But, if `value` is not an integer, a `TypeError` is raised.
 
 ::
 
@@ -105,7 +105,7 @@ But, if ``value`` is not an integer, a ``TypeError`` is raised.
     Traceback (most recent call last):
     TypeError: absolutely every possible invalid must be an integer
 
-And if ``value`` is an integer, but less than or equal to zero, a ValueError
+And if `value` is an integer, but less than or equal to zero, a ValueError
 is raised.
 
 ::
@@ -120,7 +120,7 @@ is raised.
     Traceback (most recent call last):
     ValueError: invalid int must be greater than 0
 
-Both ``name`` and ``value`` must be provided. Otherwise, a TypeError is raised.
+Both `name` and `value` must be provided. Otherwise, a TypeError is raised.
 
 ::
 
@@ -136,7 +136,7 @@ Both ``name`` and ``value`` must be provided. Otherwise, a TypeError is raised.
     TypeError: integer_validator() missing 1 required positional argument: 
     'value'
 
-The method assumes the paramter ``name`` will be a string, but ``name`` of any
+The method assumes the paramter `name` will be a string, but `name` of any
 type will be printed.
 
 ::
