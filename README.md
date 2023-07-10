@@ -13,6 +13,7 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **Python - Test-driven development**
 - **Python - More Classes and Objects**
 - **Python - Everything is object**
+- **Python - Inheritance**
 
 # Author
 
