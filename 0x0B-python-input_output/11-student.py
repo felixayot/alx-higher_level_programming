@@ -28,7 +28,8 @@ class Student:
         """
         if (type(attrs) == list and
                 all(type(item) == str for item in attrs)):
-            return {name: getattr(self, name) for name in attrs if hasattr(self, name)}
+            return {name: getattr(self, name) for
+                    name in attrs if hasattr(self, name)}
         return self.__dict__
 
     def reload_from_json(self, json):
