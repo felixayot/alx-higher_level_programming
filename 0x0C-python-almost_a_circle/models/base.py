@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+"""
+Defines a base class Base. More methods are implemented down below.
+Read through to get the full functionality of the class.
+"""
+
+
 import json
 import csv
 import turtle
-"""Defines a base class Base."""
 
 
 class Base:
