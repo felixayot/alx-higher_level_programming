@@ -74,7 +74,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Returns a class instantied from a dictionary of attributes.
+        """Returns a class instantiated from a dictionary of attributes.
 
         Args:
             **dictionary (dict): Key/value pairs of attributes to initialize.
