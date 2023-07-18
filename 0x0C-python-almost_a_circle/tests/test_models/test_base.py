@@ -182,6 +182,52 @@ class TestBase_save_to_file(unittest.TestCase):
         with self.assertRaises(TypeError):
             Base.from_json_string([], 1)
 
+        # Tests that save_to_file method writes an
+        #  empty list to file when list_objs is None
+    def test_save_to_file_with_none(self):
+        Rectangle.save_to_file(None)
+        with open('Rectangle.json', 'r') as f:
+            self.assertEqual(f.read(), '[]')
+
+    # Tests that the method 'save_to_file' writes the
+    #  JSON string representation of a list of objects to a file.
+    def test_save_to_file(self):
+        Rectangle.save_to_file([])
+        with open("Rectangle.json", "r") as f:
+            self.assertEqual(Base.from_json_string(f.read()), [])
+
+    # Tests that save_to_file method writes the JSON string representation
+    #  of a list of one Rectangle object to a file.
+    def test_save_to_file_with_list_of_one_rectangle(self):
+        r = Rectangle(1, 2)
+        Rectangle.save_to_file([r])
+        with open('Rectangle.json', 'r') as f:
+            content = f.read()
+        self.assertEqual(content, '[{"id": 39, "width": 1, "height": 2, \
+"x": 0, "y": 0}]')
+
+    # Tests that save_to_file method writes an empty list to file when
+    #  None is passed as input.
+    def test_save_to_file_with_none_input(self):
+        Square.save_to_file(None)
+        with open('Square.json', 'r') as f:
+            self.assertEqual(f.read(), '[]')
+
+    # Tests that save_to_file method writes an empty list
+    #  to file when passed an empty list
+    def test_empty_list(self):
+        Square.save_to_file([])
+        with open('Square.json', 'r') as f:
+            self.assertEqual(f.read(), '[]')
+
+    # Tests that save_to_file method writes the JSON string representation
+    #  of a list of one Square object to a file.
+    def test_save_to_file_with_list_of_one_square(self):
+        Square.save_to_file([Square(1)])
+        with open('Square.json', 'r') as f:
+            content = f.read()
+        self.assertEqual(content, '[{"id": 40, "size": 1, "x": 0, "y": 0}]')
+
 
 class TestBase_create(unittest.TestCase):
     """Unittests for testing create method of Base class."""
