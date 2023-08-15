@@ -16,6 +16,7 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **Python - Inheritance**
 - **Python - Input/Output**
 - **Python - Almost a circle**
+- **SQL - Introduction**
 
 # Author
 
