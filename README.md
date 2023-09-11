@@ -18,6 +18,7 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **Python - Almost a circle**
 - **SQL - Introduction**
 - **SQL - More queries**
+- **JavaScript - Warm up**
 
 # Author
 
