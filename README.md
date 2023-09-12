@@ -19,6 +19,7 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **SQL - Introduction**
 - **SQL - More queries**
 - **JavaScript - Warm up**
+- **JavaScript - Objects, Scopes and Closures**
 
 # Author
 
