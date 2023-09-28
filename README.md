@@ -21,6 +21,7 @@ I covered basic concepts of Python Programming Language(projects listed below). 
 - **JavaScript - Warm up**
 - **JavaScript - Objects, Scopes and Closures**
 - **Python - Object-relational mapping**
+- **Python - Network #0**
 
 # Author
 
