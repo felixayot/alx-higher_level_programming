@@ -24,6 +24,7 @@ I covered basic concepts of Python Programming Language(projects listed below).
 - **Python - Network #0**
 - **Python - Network #1**
 - **JavaScript - Web scraping**
+- **JavaScript - Web jQuery**
 
 # Author
 
